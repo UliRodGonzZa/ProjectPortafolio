@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ulises Rodrigo Gonzalez Zavala" />
-    <meta name="description" content="No más de 165 caracteres" />
+    <meta name="description" content="COLOCAR" />
     <meta
       name="keywords"
       content="palabra clave 1, palabra clave 2, palabra clave 3"
@@ -25,6 +25,7 @@
     <title>Portafolio</title>
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script type="module" src="assets/js/main.js"></script>
   </head>
 
@@ -46,19 +47,49 @@
 
           <ul class="navbar__list flex--container">
             <li class="navbar__item">
-              <a class="navbar__link active" href="#home">Inicio</a>
+              <a
+                class="navbar__link active"
+                href="#home"
+                data-lang-es="Inicio"
+                data-lang-en="Home"
+                >Inicio</a
+              >
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#about">Acerca de Mí</a>
+              <a
+                class="navbar__link"
+                href="#about"
+                data-lang-es="Acerca de Mí"
+                data-lang-en="About Me"
+                >Acerca de Mí</a
+              >
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#skills">Habilidades</a>
+              <a
+                class="navbar__link"
+                href="#skills"
+                data-lang-es="Habilidades"
+                data-lang-en="Skills"
+                >Habilidades</a
+              >
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#projects">Portafolio</a>
+              <a
+                class="navbar__link"
+                href="#projects"
+                data-lang-es="Portafolio"
+                data-lang-en="Portfolio"
+                >Portafolio</a
+              >
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#contact">Contacto</a>
+              <a
+                class="navbar__link"
+                href="#contact"
+                data-lang-es="Contacto"
+                data-lang-en="Contact"
+                >Contacto</a
+              >
             </li>
           </ul>
         </div>
@@ -124,7 +155,7 @@
         <div class="home__container grid--container">
           <div class="home__image">
             <img
-              src="assets/img/RORRO.png"
+              src="assets/img/personal_0.png"
               alt="profile photo"
               title="Ulises Rodrigo Gonzalez Zavala"
             />
@@ -160,18 +191,33 @@
           </ul>
 
           <div class="home__info">
-            <h1 class="home__title">Hola, soy Rodrigo</h1>
+            <h1
+              class="home__title"
+              data-lang-es="Hola, soy Rodrigo"
+              data-lang-en="Hi, I'm Rodrigo"
+            >
+              Hola, soy Rodrigo
+            </h1>
 
-            <p class="home__description">Soy un crack</p>
+            <p
+              class="home__description"
+              data-lang-es="Estudiante de Ingeniería en Computación | Desarrollo Web & IA"
+              data-lang-en="Computer Engineering Student | Web Development & AI"
+            >
+              Estudiante de Ingeniería en Computación | Desarrollo Web & IA
+            </p>
           </div>
 
           <div class="home__buttons">
             <a
+              id="download-pdf"
               class="btn"
               href="#"
               title="Descargar mi CV"
               download="my_cv"
               rel="noreferrer nofollow"
+              data-lang-es="Descargar CV"
+              data-lang-en="Download CV"
             >
               Descargar CV
             </a>
@@ -180,10 +226,20 @@
       </section>
 
       <section id="about" class="about section">
-        <h2 class="section__title">Acerca de Mí</h2>
+        <h2
+          class="section__title"
+          data-lang-es="Acerca de Mí"
+          data-lang-en="About Me"
+        >
+          Acerca de Mí
+        </h2>
 
         <div class="about__container grid--container">
-          <p class="about__description">
+          <p
+            class="about__description"
+            data-lang-es="Estudiante de Ingeniería en Computación en la UNAM, miembro activo de la asociación estudiantil Protecsa, con gran interés por el aprendizaje continuo y la innovación tecnológica. Apasionado por la programación y el desarrollo de soluciones eficientes, con iniciativa para trabajar en equipo y aportar ideas creativas en proyectos académicos y extracurriculares."
+            data-lang-en="Computer Engineering Student at UNAM, active member of the student association Protecsa, with a strong interest in continuous learning and technological innovation. Passionate about programming and developing efficient solutions, with an initiative to work in teams and contribute creative ideas in academic and extracurricular projects."
+          >
             <em>Estudiante de Ingeniería en Computación</em> en la UNAM, miembro
             activo de la asociación estudiantil <em>Protecsa</em>, con gran
             interés por el aprendizaje continuo y la innovación tecnológica.
@@ -197,7 +253,7 @@
             <div class="about__card">
               <img
                 class="about__card--img"
-                src="assets/img/beyota-working.png"
+                src="assets/img/personal_1.png"
                 alt="Laborando como ingeniero"
                 title="Laborando como ingeniero"
               />
@@ -206,7 +262,7 @@
             <div class="about__card">
               <img
                 class="about__card--img"
-                src="assets/img//beyota-bodywork.png"
+                src="assets/img/personal_3.png"
                 alt="Laborando como diseñador"
                 title="Laborando como diseñador"
               />
@@ -215,7 +271,7 @@
             <div class="about__card">
               <img
                 class="about__card--img"
-                src="assets/img/beyota-reading.png"
+                src="assets/img/personal_2.png"
                 alt="Trabajando en equipo"
                 title="rabajando en equipo"
               />
@@ -225,14 +281,23 @@
       </section>
 
       <section id="skills" class="skills section">
-        <h2 class="section__title">Habilidades</h2>
+        <h2
+          class="section__title"
+          data-lang-es="Habilidades"
+          data-lang-en="Skills"
+        >
+          Habilidades
+        </h2>
 
         <div class="skills__container grid--container">
-          <p class="skills__description flex--container">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
-            incidunt aut distinctio maxime recusandae. Velit exercitationem
-            ducimus cupiditate corrupti eveniet soluta accusamus quasi,
-            suscipit, vitae optio, officiis rerum cumque numquam.
+          <p
+            class="skills__description flex--container"
+            data-lang-es="Me apasiona el aprendizaje constante, por lo que he adquirido conocimientos en múltiples lenguajes y herramientas. Estas son algunas de las tecnologías en las que tengo experiencia."
+            data-lang-en="I am passionate about continuous learning, so I have acquired knowledge in multiple languages and tools. Here are some of the technologies I have experience with."
+          >
+            Me apasiona el aprendizaje constante, por lo que he adquirido
+            conocimientos en múltiples lenguajes y herramientas. Estas son
+            algunas de las tecnologías en las que tengo experiencia.
           </p>
 
           <div class="skills__wrapper flex--container">
@@ -245,12 +310,14 @@
                 <div class="skills__card-container">
                   <h3 class="skills__card-title">HTML</h3>
 
-                  <p class="skills__card-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Est, fuga nesciunt, officia nobis blanditiis in aperiam
-                    voluptatum officiis repellendus beatae consectetur. In,
-                    provident excepturi? Ratione doloribus consequuntur sit
-                    officia cupiditate.
+                  <p
+                    class="skills__card-description"
+                    data-lang-es="Dominio de HTML5 para la creación de estructuras semánticas optimizadas. Implemento buenas prácticas en accesibilidad y SEO, garantizando sitios web eficientes y bien posicionados."
+                    data-lang-en="Mastery of HTML5 for creating optimized semantic structures. I implement best practices in accessibility and SEO, ensuring efficient and well-positioned websites."
+                  >
+                    Dominio de HTML5 para la creación de estructuras semánticas
+                    optimizadas. Implemento buenas prácticas en accesibilidad y
+                    SEO, garantizando sitios web eficientes y bien posicionados
                   </p>
                 </div>
               </details>
@@ -262,32 +329,20 @@
                 <div class="skills__card-container">
                   <h3 class="skills__card-title">CSS3</h3>
 
-                  <p class="skills__card-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Est, fuga nesciunt, officia nobis blanditiis in aperiam
-                    voluptatum officiis repellendus beatae consectetur. In,
-                    provident excepturi? Ratione doloribus consequuntur sit
-                    officia cupiditate.
+                  <p
+                    class="skills__card-description"
+                    data-lang-es="Diseño y maquetación responsiva con CSS3, uso de Flexbox, Grid y animaciones modernas. Aplicación de metodologías como BEM y buenas prácticas de accesibilidad. Actualmente aprendiendo nuevas tecnologías como Tailwind CSS para optimizar el desarrollo frontend."
+                    data-lang-en="Responsive design and layout with CSS3, using Flexbox, Grid, and modern animations. Application of methodologies like BEM and best practices in accessibility. Currently learning new technologies like Tailwind CSS to optimize frontend development."
+                  >
+                    Diseño y maquetación responsiva con CSS3, uso de Flexbox,
+                    Grid y animaciones modernas. Aplicación de metodologías como
+                    BEM y buenas prácticas de accesibilidad. Actualmente
+                    aprendiendo nuevas tecnologías como
+                    <strong>Tailwind CSS</strong> para optimizar el desarrollo
+                    frontend.
                   </p>
                 </div>
               </details>
-              <details class="skills__cards-container" name="moreInfo">
-                <summary class="skills__cards-title flex--container">
-                  <i class="bx bxl-css3 flex--container"></i>
-                </summary>
-                <div class="skills__card-container">
-                  <h3 class="skills__card-title">CSS3</h3>
-
-                  <p class="skills__card-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Est, fuga nesciunt, officia nobis blanditiis in aperiam
-                    voluptatum officiis repellendus beatae consectetur. In,
-                    provident excepturi? Ratione doloribus consequuntur sit
-                    officia cupiditate.
-                  </p>
-                </div>
-              </details>
-              <!--Card 3 -->
               <details class="skills__cards-container" name="moreInfo">
                 <summary class="skills__cards-title flex--container">
                   <i class="bx bxl-javascript flex--container"></i>
@@ -295,16 +350,47 @@
                 <div class="skills__card-container">
                   <h3 class="skills__card-title">Javascript</h3>
 
-                  <p class="skills__card-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Est, fuga nesciunt, officia nobis blanditiis in aperiam
-                    voluptatum officiis repellendus beatae consectetur. In,
-                    provident excepturi? Ratione doloribus consequuntur sit
-                    officia cupiditate.
+                  <p
+                    class="skills__card-description"
+                    data-lang-es="Desarrollo de funcionalidades dinámicas con JavaScript, incluyendo manipulación del DOM, creación de algoritmos y estructuras lógicas eficientes. Implementación de animaciones interactivas. En constante aprendizaje de frameworks y librerías modernas como React."
+                    data-lang-en="Development of dynamic functionalities with JavaScript, including DOM manipulation, creation of algorithms and efficient logical structures. Implementation of interactive animations. Constantly learning modern frameworks and libraries like React."
+                  >
+                    Desarrollo de funcionalidades dinámicas con
+                    <strong>JavaScript</strong>, incluyendo manipulación del
+                    DOM, creación de algoritmos y estructuras lógicas
+                    eficientes. Implementación de animaciones interactivas. En
+                    constante aprendizaje de frameworks y librerías modernas
+                    como <strong>React</strong>.
                   </p>
                 </div>
               </details>
-              <!--Card 4 -->
+              <!--Card 3 -->
+              <details class="skills__cards-container" name="moreInfo">
+                <summary class="skills__cards-title flex--container">
+                  <i class="bx bxs-data flex--container"></i>
+                </summary>
+                <div class="skills__card-container">
+                  <h3 class="skills__card-title">DataBase</h3>
+
+                  <p
+                    class="skills__card-description"
+                    data-lang-es="Especialización en bases de datos relacionales como Oracle y SQL Server, con experiencia en el diseño de modelos de datos, normalización, creación de consultas avanzadas con SQL, desarrollo de triggers, procedimientos almacenados, vistas e índices para optimizar el rendimiento. Actualmente en aprendizaje de bases de datos NoSQL, explorando tecnologías como MongoDB para proyectos modernos y escalables."
+                    data-lang-en="Specialization in relational databases such as Oracle and SQL Server, with experience in data model design, normalization, creation of advanced SQL queries, development of triggers, stored procedures, views, and indexes to optimize performance. Currently learning NoSQL databases, exploring technologies like MongoDB for modern and scalable projects."
+                  >
+                    Especialización en bases de datos relacionales como
+                    <strong>Oracle</strong> y <strong>SQL Server</strong>, con
+                    experiencia en el diseño de modelos de datos, normalización,
+                    creación de consultas avanzadas con <code>SQL</code>,
+                    desarrollo de <em>triggers</em>, procedimientos almacenados,
+                    vistas e índices para optimizar el rendimiento. Actualmente
+                    en aprendizaje de bases de datos <strong>NoSQL</strong>,
+                    explorando tecnologías como <em>MongoDB</em> para proyectos
+                    modernos y escalables.
+                  </p>
+                </div>
+              </details>
+
+              <!--Card 5 -->
               <details class="skills__cards-container" name="moreInfo">
                 <summary class="skills__cards-title flex--container">
                   <i class="bx bxl-react flex--container"></i>
@@ -312,12 +398,16 @@
                 <div class="skills__card-container">
                   <h3 class="skills__card-title">React</h3>
 
-                  <p class="skills__card-description">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Est, fuga nesciunt, officia nobis blanditiis in aperiam
-                    voluptatum officiis repellendus beatae consectetur. In,
-                    provident excepturi? Ratione doloribus consequuntur sit
-                    officia cupiditate.
+                  <p
+                    class="skills__card-description"
+                    data-lang-es="Desarrollo de aplicaciones interactivas con React, utilizando componentes reutilizables, props y hooks como useState y useEffect. Manejo de estado y comunicación entre componentes."
+                    data-lang-en="Development of interactive applications with React, using reusable components, props, and hooks like useState and useEffect. State management and communication between components."
+                  >
+                    Desarrollo de aplicaciones interactivas con
+                    <strong>React</strong>, utilizando componentes
+                    reutilizables, props y <em>hooks</em> como
+                    <code>useState</code> y <code>useEffect</code>. Manejo de
+                    estado y comunicación entre componentes
                   </p>
                 </div>
               </details>
@@ -326,44 +416,103 @@
           <div class="skills__tags flex--container">
             <h3 class="skills__tags-title">Habilidades Blandas</h3>
             <div class="skills__tags-container flex--container">
-              <span class="skills__tag">Responsable</span>
-              <span class="skills__tag">Trabajo en equipo</span>
-              <span class="skills__tag">Creativo</span>
-              <span class="skills__tag">Puntual</span>
-              <span class="skills__tag">Proactivo</span>
-              <span class="skills__tag">Autodidacta</span>
+              <span
+                class="skills__tag"
+                data-lang-es="Responsable"
+                data-lang-en="Responsible"
+                >Responsable</span
+              >
+              <span
+                class="skills__tag"
+                data-lang-es="Trabajo en equipo"
+                data-lang-en="Teamwork"
+                >Trabajo en equipo</span
+              >
+              <span
+                class="skills__tag"
+                data-lang-es="Creativo"
+                data-lang-en="Creative"
+                >Creativo</span
+              >
+              <span
+                class="skills__tag"
+                data-lang-es="Puntual"
+                data-lang-en="Punctual"
+                >Puntual</span
+              >
+              <span
+                class="skills__tag"
+                data-lang-es="Proactivo"
+                data-lang-en="Proactive"
+                >Proactivo</span
+              >
+              <span
+                class="skills__tag"
+                data-lang-es="Autodidacta"
+                data-lang-en="Self-taught"
+                >Autodidacta</span
+              >
             </div>
           </div>
         </div>
       </section>
 
       <section id="projects" class="projects section">
-        <h2 class="section__title">Proyectos</h2>
+        <h2
+          class="section__title"
+          data-lang-es="Proyectos"
+          data-lang-en="Projects"
+        >
+          Proyectos
+        </h2>
 
         <div class="projects__container grid--container">
           <div class="projects__project">
             <div class="projects__inner grid--container">
               <div class="projects__image">
                 <img
-                  src="assets/img/project1.jpg"
-                  alt="project 1"
-                  title="Ecommerce Vanilla"
+                  src="assets/img/landingPage.jpg"
+                  alt="Landing Page"
+                  title="Landing Page Veterinaria"
                 />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 1</h3>
-                <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <h3
+                  class="projects__name"
+                  data-lang-es="Proyecto 1"
+                  data-lang-en="Project 1"
+                >
+                  Proyecto 1
+                </h3>
+                <p
+                  class="projects__description"
+                  data-lang-es="Landing page desarrollada en el bootcamp de Academlo"
+                  data-lang-en="Landing page developed in the Academlo bootcamp"
+                >
+                  Landing page desarrollada en el bootcamp de Academlo
                 </p>
 
                 <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
+                  <a
+                    href="https://landing-vet-gen45-rodrigo.netlify.app"
+                    target="_blank"
+                    class="btn projects__button"
+                    data-lang-es="Ver Demo"
+                    data-lang-en="View Demo"
+                  >
                     VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
+                  </a>
+                  <a
+                    href="https://github.com/UliRodGonzZa/landing-vet-gen45"
+                    target="_blank"
+                    class="btn projects__button"
+                    data-lang-es="Ver Código"
+                    data-lang-en="View Code"
+                    rel="noreferrer nofollow"
+                  >
+                    VER CODIGO
+                  </a>
                 </div>
               </div>
             </div>
@@ -373,79 +522,37 @@
             <div class="projects__inner grid--container">
               <div class="projects__image">
                 <img
-                  src="assets/img/project2.png"
-                  alt="project 1"
-                  title="Consumiendo API Pokemon con React"
+                  src="assets/img/Python_AD.jpg"
+                  alt="Analisis de datos con Pandas"
+                  title="Analisis de datos con Pandas"
                 />
               </div>
 
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 2</h3>
-                <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                <h3
+                  class="projects__name"
+                  data-lang-es="Proyecto 2"
+                  data-lang-en="Project 2"
+                >
+                  Proyecto 2
+                </h3>
+                <p
+                  class="projects__description"
+                  data-lang-es="Analisis de datos con Python y Pandas, visualización de datos, limpieza de datos y aplicacion de modelos de machine learning con Matplotlib"
+                  data-lang-en="Data analysis with Python and Pandas, data visualization, data cleaning, and application of machine learning models with Matplotlib"
+                >
+                  Análisis de datos con Python y Pandas, visualización de datos,
+                  limpieza de datos y aplicacion de modelos de machine learning
+                  con Matplotlib.
                 </p>
 
                 <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <div class="projects__image">
-                <img
-                  src="assets/img/project3.jpg"
-                  alt="project 1"
-                  title="CRUD con React"
-                />
-              </div>
-
-              <div class="projects__info">
-                <h3 class="projects__name">Proyecto 3</h3>
-                <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-
-                <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
-                    VER CÓDIGO
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="projects__project">
-            <div class="projects__inner grid--container">
-              <div class="projects__image">
-                <img
-                  src="assets/img/project4.png"
-                  alt="project 1"
-                  title="Aplicación del tiempo con React"
-                />
-              </div>
-
-              <div class="projects__info">
-                <h3 class="projects__name">Proyecto 4</h3>
-                <p class="projects__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-
-                <div class="projects__buttons">
-                  <button class="btn projects__button" type="button">
-                    VER DEMO
-                  </button>
-                  <button class="btn projects__button" type="button">
+                  <button
+                    class="btn projects__button"
+                    type="button"
+                    data-lang-es="Ver Demo"
+                    data-lang-en="View Demo"
+                  >
                     VER CÓDIGO
                   </button>
                 </div>
@@ -456,24 +563,37 @@
       </section>
 
       <section id="contact" class="contact section">
-        <h2 class="section__title">Contacto</h2>
+        <h2
+          class="section__title"
+          data-lang-es="Contacto"
+          data-lang-en="Contact"
+        >
+          Contacto
+        </h2>
 
         <div class="contact__container grid--container">
           <div class="contact__info">
             <h3 class="contact__info-title">Información de contacto</h3>
-            <p class="contact__info-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            <p
+              class="contact__info-description"
+              data-lang-es="Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:"
+              data-lang-en="If you want to get in touch with me, you can do so through the following means:"
+            >
+              Si deseas ponerte en contacto conmigo, puedes hacerlo a través de
+              los siguientes medios:
             </p>
 
             <address class="contact__info-data">
               <div class="contact__info-item">
                 <i class="bx bxl-whatsapp"></i>
-
                 <span class="contact__info-number">
                   <a
                     href="https://wa.me/525630535252?text=Hola%2C%20he%20visto%20tu%20CV%20y%20me%20gustar%C3%ADa%20contactarte"
                     target="_blank"
-                    rel="noreferrer nofollow"
+                    rel="nofollow noreferrer"
+                    title="Enviar mensaje a WhatsApp"
+                    data-lang-es="Enviar mensaje a WhatsApp"
+                    data-lang-en="Send message to WhatsApp"
                   >
                     Enviar mensaje a WhatsApp
                   </a>
@@ -486,7 +606,7 @@
                   <a
                     href="tel:+525630535252"
                     target="_blank"
-                    rel="noreferrer nofollow"
+                    rel="nofollow noreferrer"
                   >
                     +52 5630 535 252
                   </a>
@@ -495,13 +615,12 @@
 
               <div class="contact__info-item">
                 <i class="bx bxs-envelope"></i>
-
                 <span class="contact__info-mail">
                   <a
                     id="mail"
                     href="mailto:415b.gonzalez.zavala.rodrigo@gmail.com"
                     target="_blank"
-                    rel="noreferrer nofollow"
+                    rel="nofollow noreferrer"
                   >
                     415b.gonzalez.zavala.rodrigo@gmail.com
                   </a>
@@ -510,63 +629,15 @@
 
               <div class="contact__info-item">
                 <i class="bx bx-map"></i>
-
-                <span class="contact__info-map"> Bogotá, Colombia. </span>
+                <span
+                  class="contact__info-map"
+                  data-lang-es="CDMX, México"
+                  data-lang-en="CDMX, Mexico"
+                >
+                  CDMX, México.
+                </span>
               </div>
             </address>
-          </div>
-          <div class="contact__form">
-            <h3 class="contact__form-title">Enviar mensaje</h3>
-            <form id="form" class="contact__form-container">
-              <div class="contact__form-group">
-                <label for="name" class="contact__form-label">Nombre</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="contact__form-input"
-                />
-              </div>
-
-              <div class="contact__form-group">
-                <label for="email" class="contact__form-label">Correo</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="contact__form-input"
-                />
-              </div>
-
-              <div class="contact__form-group">
-                <label for="subject" class="contact__form-label">Asunto</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  class="contact__form-input"
-                />
-              </div>
-
-              <div class="contact__form-group">
-                <label for="message" class="contact__form-label">Mensaje</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  cols="30"
-                  rows="10"
-                  class="contact__form-input"
-                ></textarea>
-              </div>
-              <dialog class="contact__form-modal" id="modal">
-                Formulario enviado con éxito!
-                <button type="reset" id="btn_close-modal">Cerrar</button>
-              </dialog>
-
-              <button type="submit" class="btn contact__form-button">
-                Enviar
-              </button>
-            </form>
           </div>
         </div>
       </section>
@@ -575,31 +646,31 @@
     <footer class="footer section">
       <div class="footer__container grid--container">
         <div class="footer__info">
-          <h3 class="footer__title">Bellota Utonio</h3>
-          <p class="footer__description">
-            Soy desarrolladora web, apasionada por la tecnología y la
+          <h3 class="footer__title">Ulises Rodrigo Gonzalez Zavala</h3>
+          <p
+            class="footer__description"
+            data-lang-es="Soy desarrollador web, apasionada por la tecnología y la programación."
+            data-lang-en="I am a web developer, passionate about technology and programming."
+          >
+            Soy desarrollador web, apasionada por la tecnología y la
             programación.
           </p>
         </div>
 
         <div class="footer__social">
-          <h3 class="footer__title">Redes Sociales</h3>
+          <h3
+            class="footer__title"
+            data-lang-es="Redes Sociales"
+            data-lang-en="Social Media"
+          >
+            Redes Sociales
+          </h3>
 
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a
                 class="footer__social-link"
-                href="#"
-                target="_blank"
-                rel="noreferrer nofollow"
-                ><i class="bx bxl-facebook"></i
-              ></a>
-            </li>
-
-            <li class="footer__social-item">
-              <a
-                class="footer__social-link"
-                href="#"
+                href="https://www.instagram.com/_rodrigogo._?igsh=MTRoMThxbWluZDR4OQ=="
                 target="_blank"
                 rel="noreferrer nofollow"
                 ><i class="bx bxl-instagram"></i
@@ -609,10 +680,10 @@
             <li class="footer__social-item">
               <a
                 class="footer__social-link"
-                href="#"
+                href="https://github.com/UliRodGonzZa"
                 target="_blank"
                 rel="noreferrer nofollow"
-                ><i class="bx bxl-twitter"></i
+                ><i class="bx bxl-github"></i
               ></a>
             </li>
 
@@ -629,7 +700,13 @@
         </div>
       </div>
 
-      <p class="footer__copy"><span></span> Todos los derechos reservados</p>
+      <p
+        class="footer__copy"
+        data-lang-es="Todos los derechos reservados"
+        data-lang-en="All rights reserved"
+      >
+        Todos los derechos reservados
+      </p>
     </footer>
   </body>
 </html>
